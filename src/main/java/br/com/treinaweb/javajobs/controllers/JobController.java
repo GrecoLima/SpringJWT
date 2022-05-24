@@ -39,7 +39,7 @@ public class JobController {
 
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
-    public Job create(@RequestBody @Valid JobDTO jobDTO) {
+    public Job create(@RequestBody JobDTO jobDTO) {
         return jobService.create(jobDTO);
     }
 
